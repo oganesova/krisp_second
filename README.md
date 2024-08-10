@@ -90,7 +90,7 @@ The `process_payments()` function has been modified to compute and print a check
 
 
 # 4. Payment Processor
-![Uploading image.png…]()
+![image](https://github.com/user-attachments/assets/9b62ed6e-4ac2-4f7a-89f2-b68eb9e62397)
 
 
 ## Overview
@@ -112,3 +112,19 @@ Due to incompatibilities between the two vendor functions, the script includes g
 ## Usage
    python task_4.py
 
+# 5.Configs 
+![Uploading image.png…]()
+
+## Overview
+
+This project provides utilities for processing configuration data related to Directed Acyclic Graphs (DAGs) used in Airflow workflows. The utilities include functions for fetching and transforming values from dictionaries, handling boolean strings, and constructing FTP file prefixes. The code is equipped with logging to facilitate debugging and error tracking.
+
+## Features
+
+- **`get_value(data, key, default, lookup=None, mapper=None)`**: Retrieves a value from a dictionary, applying transformations and default values as needed.
+- **`ftp_file_prefix(namespace)`**: Modifies a namespace string to replace the final token with 'ftp'.
+- **`string_to_bool(string)`**: Converts a string to a boolean value, handling case-insensitive 'true' and 'false' inputs.
+- **`config_from_dict(config_dict)`**: Processes a dictionary representing a row from a CSV file to generate a DAG configuration.
+
+## Usage
+   python task_5.py
