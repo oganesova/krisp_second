@@ -26,6 +26,8 @@ The function has been tested with various inputs to ensure its correctness. Exam
 
 
 # 2. Cheap Crowdfunding Problem
+![image](https://github.com/user-attachments/assets/d26cb5c8-0e2e-4e7d-bc0e-2a7f2b9b18e2)
+
 
 ## Description
 
@@ -63,6 +65,8 @@ A DataFrame with filtered projects.
   python task_2.py
 
 # 3.Streaming Payments Processor
+![image](https://github.com/user-attachments/assets/de127eba-a03e-47c3-8b05-f7afe9d41092)
+
 
 ## Overview
 
