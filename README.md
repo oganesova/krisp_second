@@ -90,7 +90,7 @@ The `process_payments()` function has been modified to compute and print a check
 
 
 # 4. Payment Processor
-![image](https://github.com/user-attachments/assets/9b62ed6e-4ac2-4f7a-89f2-b68eb9e62397)
+![image](https://github.com/user-attachments/assets/aea0ea24-9b41-48f3-aa7b-6f38651ffae9)
 
 
 ## Overview
@@ -113,7 +113,8 @@ Due to incompatibilities between the two vendor functions, the script includes g
    python task_4.py
 
 # 5.Configs 
-![Uploading image.png…]()
+![image](https://github.com/user-attachments/assets/b9b8dcea-1233-4e5d-b043-5ff2146f7d88)
+
 
 ## Overview
 
