@@ -61,7 +61,7 @@ df: DataFrame with crowdfunding data.
 min_amount: Minimum amount to filter projects.
 Returns:
 A DataFrame with filtered projects.
-
+## Usage
   python task_2.py
 
 # 3.Streaming Payments Processor
@@ -84,5 +84,31 @@ The `process_payments()` function has been modified to compute and print a check
    - Initializes an in-memory buffer to capture payment data.
    - Calls `stream_payments_to_storage()` to write data to the buffer.
    - Calculates and prints the checksum of the written data.
-   - 
+  
+## Usage
    python task_3.py
+
+
+# 4. Payment Processor
+![Uploading image.png…]()
+
+
+## Overview
+
+This script processes payments from a streaming source and stores them in a remote system. The system is designed to handle a large, but finite amount of payments in a streaming fashion using two vendor functions:
+
+- `stream_payments(callback_fn)`: Streams payments and invokes the callback function for each payment.
+- `store_payments(amount_iterator)`: Stores payments provided by an iterator.
+
+Due to incompatibilities between the two vendor functions, the script includes glue code to integrate these functions effectively.
+
+## How It Works
+
+1. **Stream Payments**: The `process_payments_2()` function uses `stream_payments()` to stream payments.
+2. **Buffer Payments**: Payments are collected in a buffer.
+3. **Store Payments**: When the buffer reaches its capacity, the payments are flushed and stored using `store_payments()`.
+4. **Final Flush**: Any remaining payments in the buffer are flushed and stored after streaming completes.
+
+## Usage
+   python task_4.py
+
