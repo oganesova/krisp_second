@@ -30,7 +30,7 @@ The function has been tested with various inputs to ensure its correctness. Exam
 
 
 ## Description
-Create a Python script that extracts and returns article titles from an RSS feed URL using the feedparser library, with logging implemented for debugging and error handling.
+Given the RSS feed URL from Google News (https://news.google.com/news/rss), the get_headlines() function should return a list of headlines from the feed.
 
 ## Functions :
 get_headlines(rss_url: str) -> List[str]:
