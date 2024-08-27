@@ -25,42 +25,25 @@ The function has been tested with various inputs to ensure its correctness. Exam
 - For the input `[-1, -3]`, the function returns `1`.
 
 
-# 2. Cheap Crowdfunding Problem
+# 2. Extract headers RSS
 ![image](https://github.com/user-attachments/assets/d26cb5c8-0e2e-4e7d-bc0e-2a7f2b9b18e2)
 
 
 ## Description
+Create a Python script that extracts and returns article titles from an RSS feed URL using the feedparser library, with logging implemented for debugging and error handling.
 
-The "Cheap Crowdfunding Problem" is a task where you need to analyze and process data related to crowdfunding projects. The goal is to develop a script or application that can handle various operations related to crowdfunding, such as filtering projects, calculating statistics, and presenting results in a meaningful way.
-
-## Installation
-
-1. Ensure you have Python 3.x installed.
-2. Install the required Python libraries:
-   pip install pandas numpy
 ## Functions :
-
-process_data(file_path: str) -> pd.DataFrame:
-Reads and processes crowdfunding data from the specified file.
+get_headlines(rss_url: str) -> List[str]:
+Purpose: Extracts and returns a list of article titles from the specified RSS feed URL.
 Parameters:
-file_path: Path to the data file.
+rss_url (str): The URL of the RSS feed.
 Returns:
-A DataFrame with processed data.
-calculate_statistics(df: pd.DataFrame) -> dict:
+A list of strings, each representing an article title.
+Key Operations:
+Parses the RSS feed.
+Logs the progress and any errors.
+Handles errors gracefully by logging and returning an empty list if parsing fails.
 
-Calculates various statistics from the DataFrame.
-Parameters:
-df: DataFrame with crowdfunding data.
-Returns:
-A dictionary with calculated statistics.
-filter_projects(df: pd.DataFrame, min_amount: float) -> pd.DataFrame:
-
-Filters projects based on the minimum amount.
-Parameters:
-df: DataFrame with crowdfunding data.
-min_amount: Minimum amount to filter projects.
-Returns:
-A DataFrame with filtered projects.
 ## Usage
   python task_2.py
 
