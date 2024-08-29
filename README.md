@@ -100,9 +100,7 @@ Due to incompatibilities between the two vendor functions, the script includes g
 
 
 ## Overview
-
-This project provides utilities for processing configuration data related to Directed Acyclic Graphs (DAGs) used in Airflow workflows. The utilities include functions for fetching and transforming values from dictionaries, handling boolean strings, and constructing FTP file prefixes. The code is equipped with logging to facilitate debugging and error tracking.
-
+Code Review
 ## Features
 
 - **`get_value(data, key, default, lookup=None, mapper=None)`**: Retrieves a value from a dictionary, applying transformations and default values as needed.
